@@ -7,7 +7,8 @@ def safe_print_list_integers(my_list=[], x=0):
             if tf == True:
                 print("{}".format(my_list[i]), end="")
                 ii += 1
-        except:
-            return
+        except (ValueError, TypeError) as Error:
+            continue
+
     print()
     return ii
