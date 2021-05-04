@@ -1,0 +1,1 @@
+# this is the readme for hte 0x05.Python project - Exceptions
