@@ -5,7 +5,7 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             tf = isinstance(my_list[i], int)
             if tf is True:
-                print("{}".format(my_list[i]), end="")
+                print("{:d}".format(my_list[i]), end="")
                 ii += 1
         except (ValueError, TypeError) as Error:
             continue
