@@ -10,9 +10,8 @@ class Square():
         In addition, this checks that size is 0 or more """
 
         tf = isinstance(size, int)
-        if tf is True:
-            self.__size = size
-        else:
+        if tf is False:
             print("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = size
