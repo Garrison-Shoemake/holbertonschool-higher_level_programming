@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+""" Square will now have a check on size"""
+
+
+class Square():
+    """ Square's only attribute is size atm """
+
+    def __init__(self, size=0):
+        """ Initialization method, variables go here
+        In addition, this checks that size is 0 or more """
+        self.__size = size
+
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
+
+    def area(self):
+        return (self.__size**2)
