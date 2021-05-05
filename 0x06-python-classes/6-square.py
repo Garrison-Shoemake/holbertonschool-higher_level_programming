@@ -5,10 +5,11 @@
 class Square():
     """ Square's only attribute is size atm """
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """ Initialization method, variables go here
         In addition, this checks that size is 0 or more """
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -30,10 +31,12 @@ class Square():
     def position(self, value):
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
-        if len(value) != 2:
+        elif len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 and value[1] < 0:
+        elif value[0] < 0 and value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = value
 
     def area(self):
         return (self.__size**2)
