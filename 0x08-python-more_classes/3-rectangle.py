@@ -42,11 +42,12 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        string = []
+        string = ""
         if self.__height == 0 or self.__width == 0:
             return ""
         for i in range(self.__height):
-            for i in range(self.__width):
-                string.append("#")
-            string.append('\n')
-        return "{}".format("", end="").join(string)
+            for j in range(self.__width):
+                string += "#"
+            if i < self.__height - 1:
+                string += "\n"
+        return "".format(end="").join(string)
