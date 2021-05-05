@@ -8,8 +8,8 @@ class Square():
     def __init__(self, size=0, position=(0, 0)):
         """ Initialization method, variables go here
         In addition, this checks that size is 0 or more """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -33,12 +33,11 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         elif len(value) < 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif not isinstance(value[0], int) and not isinstance(value[1], int):
+        elif not isinstance(value[0], int) or not isinstance(value[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif value[0] < 0 or value[1] <0:
+        elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = value
+        self.__position = value
 
     def area(self):
         return (self.__size**2)
