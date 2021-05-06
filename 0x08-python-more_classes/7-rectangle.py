@@ -51,10 +51,10 @@ class Rectangle:
             return ""
         for i in range(self.__height):
             for j in range(self.__width):
-                string += Rectangle.print_symbol
+                string += self.print_symbol
             if i < self.__height - 1:
                 string += "\n"
-        return "".format(end="").join(string)
+        return string
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
