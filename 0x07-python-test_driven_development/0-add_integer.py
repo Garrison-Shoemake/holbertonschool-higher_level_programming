@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ This is a basic addition function """
 
+
 def add_integer(a, b=98):
-""" Checks both a and b for correct type and converts if needed """
+    """ Checks both a and b for correct type and converts if needed """
 
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
