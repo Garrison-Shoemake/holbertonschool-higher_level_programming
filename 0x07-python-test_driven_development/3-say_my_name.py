@@ -3,7 +3,8 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """ This is the function that prints a name, after checking that it is a string """
+    """ This is the function that prints a name,
+    after checking that it is a string """
 
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
