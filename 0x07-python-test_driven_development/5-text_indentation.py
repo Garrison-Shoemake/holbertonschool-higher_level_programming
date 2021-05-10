@@ -6,7 +6,6 @@ def text_indentation(text):
     """ this function checks for a string first then separates based
     on delimiters found """
 
-
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
