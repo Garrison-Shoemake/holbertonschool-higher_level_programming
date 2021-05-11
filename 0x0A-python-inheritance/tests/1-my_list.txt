@@ -1,0 +1,4 @@
+>>> lst = MyList()
+>>> lst = [1, 5, 24, 44, 11]
+>>> print(lst)
+>>> lst.print_sorted()
