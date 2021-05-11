@@ -1,4 +1,9 @@
+>>> MyList = __import__('1-my_list').MyList
 >>> lst = MyList()
->>> lst = [1, 5, 24, 44, 11]
->>> print(lst)
+>>> lst.append(1)
+>>> lst.append(3)
+>>> lst.append(13)
+>>> lst.append(2)
+>>> lst.append(99)
 >>> lst.print_sorted()
+[1, 2, 3, 13, 99]
