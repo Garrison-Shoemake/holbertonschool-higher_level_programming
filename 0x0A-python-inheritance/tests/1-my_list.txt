@@ -7,3 +7,4 @@
 >>> lst.append(99)
 >>> lst.print_sorted()
 [1, 2, 3, 13, 99]
+>>> print(lst)
