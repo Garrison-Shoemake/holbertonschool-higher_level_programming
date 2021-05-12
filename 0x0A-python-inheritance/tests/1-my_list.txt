@@ -9,6 +9,8 @@
 [4, 8, 123, 1, -17]
 >>> lst.print_sorted()
 [-17, 1, 4, 8, 123]
+>>> print(lst)
+[4, 8, 123, 1, -17]
 >>> lst2 = []
 >>> lst2.print_sorted()
 Traceback (most recent call last):
