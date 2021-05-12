@@ -8,4 +8,4 @@ def write_file(filename="", text=""):
     if it doesnt exist and overwrites the content if it exists """
 
     with open(filename, 'w') as f:
-        f.write(text)
+        return f.write(text)
