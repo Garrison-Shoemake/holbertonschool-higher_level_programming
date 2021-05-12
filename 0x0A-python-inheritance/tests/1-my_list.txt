@@ -1,10 +1,20 @@
 >>> MyList = __import__('1-my_list').MyList
 >>> lst = MyList()
+>>> lst.append(4)
+>>> lst.append(8)
+>>> lst.append(123)
 >>> lst.append(1)
->>> lst.append(3)
->>> lst.append(13)
->>> lst.append(2)
->>> lst.append(99)
->>> lst.print_sorted()
-[1, 2, 3, 13, 99]
+>>> lst.append(-17)
 >>> print(lst)
+[4, 8, 123, 1, -17]
+>>> lst.print_sorted()
+[-17, 1, 4, 8, 123]
+>>> lst2 = []
+>>> lst2.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+>>> lst2 = MyList()
+>>> lst2.print_sorted()
+[]
+>>>
