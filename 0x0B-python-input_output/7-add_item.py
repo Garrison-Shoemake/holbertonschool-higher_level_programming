@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This file loads, adds, and saves files """
+""" This file loads adds and saves files """
 
 
 import sys
