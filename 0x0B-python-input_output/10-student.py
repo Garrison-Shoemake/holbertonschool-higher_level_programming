@@ -14,7 +14,7 @@ class Student():
     def to_json(self, attrs=None):
         atts = {}
 
-        if attrs != None:
+        if attrs is not None:
             for i in attrs:
                 if i in self.__dict__:
                     atts[i] = self.__dict__[i]
