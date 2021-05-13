@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ This file loads adds and saves files """
 
+import json
 import sys
 
 
@@ -12,5 +13,5 @@ try:
 except:
     lst = []
 
-lst += argv[1:]
+lst += sys.argv[1:]
 save_to_json_file(lst, 'add_item.json')
