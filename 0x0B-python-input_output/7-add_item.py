@@ -11,7 +11,6 @@ lst = []
 lst.append(sys.argv[1:])
 strlst = str(lst)
 
-with open('add_item.json', 'a') as f:
-    """does this count as documentation? """
+with open('add_item.json', 'x') as f:
 
     f.write(strlst)
