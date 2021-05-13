@@ -7,7 +7,7 @@ max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
 
-    def thisisamethod(self):
+    def test_these(self):
         self.assertEqual(max_integer([1,2,3,4,5]), 5)
         self.assertIsInstance(max_integer([1, 2, 3, 4, 5]), list)
         self.assertRaises(TypeError, max_integer((1,2)))
