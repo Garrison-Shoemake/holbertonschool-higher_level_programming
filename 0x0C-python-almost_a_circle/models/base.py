@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ This is our Base Class file """
 
+
 class Base:
     """ Base Class information goes here """
 
