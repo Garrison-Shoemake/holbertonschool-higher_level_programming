@@ -87,6 +87,8 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height)
     def update(self, *args):
+        """ this function updates information given
+        based on arguments given by user """ 
         ids = ['id', 'width', 'height', 'x', 'y']
         i = 0
         if args:
