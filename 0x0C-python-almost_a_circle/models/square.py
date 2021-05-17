@@ -21,9 +21,9 @@ class Square(Rectangle):
         self.__width = size
         self.__height = size
 
-    def __str__(self)
-    """ string override """
-    return "[Square] ({}) {}/{} - {}".format(self.id,
-                                             self.x,
-                                             self.y,
-                                             self.size)
+    def __str__(self):
+        """ string override """
+        return "[Square] ({}) {}/{} - {}".format(self.id,
+                                                 self.x,
+                                                 self.y,
+                                                 self.size)
