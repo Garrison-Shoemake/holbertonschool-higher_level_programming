@@ -32,3 +32,16 @@ class Square(Rectangle):
                                                  self.x,
                                                  self.y,
                                                  self.size)
+
+    def update(self, *args, **kwargs):
+        """ this updates similarly to rectangle """
+
+        ids = ['id', 'size', 'x', 'y']
+        i = 0
+        if args:
+            for arg in args:
+                setattr(self, ids[i] args[i])
+                i += 1
+        if kwargs:
+            for arg in kwargs:
+                setattr(self, arg, kwargs[arg])
