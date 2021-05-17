@@ -86,3 +86,10 @@ class Rectangle(Base):
                                                        self.y,
                                                        self.width,
                                                        self.height)
+    def update(self, *args):
+        ids = ['id', 'width', 'height', 'x', 'y']
+        i = 0
+        if args:
+            for arg in args:
+                setattr(self, ids[i], args[i])
+                i += 1
