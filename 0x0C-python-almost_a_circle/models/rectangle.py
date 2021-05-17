@@ -103,4 +103,6 @@ class Rectangle(Base):
     def to_dictionary(self):
         """ this method will return a dicitonary
         representation of this class """
-        return vars(self)
+        x = {'id': self.id, 'width': self.width,
+             'height': self.height, 'x': self.x, 'y': self.y}
+        return x
