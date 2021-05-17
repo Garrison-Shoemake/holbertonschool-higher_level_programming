@@ -39,7 +39,7 @@ class Square(Rectangle):
         i = 0
         if args:
             for arg in args:
-                setattr(self, ids[i] args[i])
+                setattr(self, ids[i], args[i])
                 i += 1
         if kwargs:
             for arg in kwargs:
