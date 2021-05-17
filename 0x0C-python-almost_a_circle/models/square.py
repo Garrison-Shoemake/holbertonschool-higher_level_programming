@@ -10,6 +10,7 @@ class Square(Rectangle):
     square is just a rectangle with equal sides """
 
     def __init__(self, size, x=0, y=0, id=None):
+        """ does this need documentation now? """
         super().__init__(id, size, size, x, y)
 
     @size.setter
