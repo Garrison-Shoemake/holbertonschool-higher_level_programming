@@ -35,7 +35,6 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """ this updates similarly to rectangle """
-
         ids = ['id', 'size', 'x', 'y']
         i = 0
         if args:
