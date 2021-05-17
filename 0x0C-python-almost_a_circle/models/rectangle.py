@@ -99,3 +99,8 @@ class Rectangle(Base):
         if kwargs:
             for arg in kwargs:
                 setattr(self, arg, kwargs[arg])
+
+    def to_dictionary(self):
+        """ this method will return a dicitonary
+        representation of this class """
+        return vars(self)
