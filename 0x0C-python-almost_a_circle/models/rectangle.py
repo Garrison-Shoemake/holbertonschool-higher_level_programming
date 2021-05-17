@@ -87,7 +87,7 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ this function updates information given
         based on arguments given by user """
         ids = ['id', 'width', 'height', 'x', 'y']
@@ -96,3 +96,6 @@ class Rectangle(Base):
             for arg in args:
                 setattr(self, ids[i], args[i])
                 i += 1
+        if kwargs:
+            for arg in kwargs:
+                setattr(self, arg, kwargs[arg])
