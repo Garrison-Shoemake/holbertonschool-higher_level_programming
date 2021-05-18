@@ -9,6 +9,12 @@ from models.rectangle import Rectangle
 class RectTest(unittest.TestCase):
     """ These are the unit tests for the base class """
 
+    def test_basics2(self):
+        r = Rectangle(1, 2)
+        self.assertEqual(r.width, 1)
+        r = Rectangle(1, 2, 3)
+        self.assertEqual(r.x, 3)
+
     def test_basics(self):
         r = Rectangle(3, 4, 5, 6)
         self.assertEqual(r.width, 3)
