@@ -58,5 +58,9 @@ class SqrTest(unittest.TestCase):
         s.update(1, 2, 3, 4)
         self.assertEqual(str(s), "[Square] (1) 3/4 - 2")
 
+    def test_area(self):
+        s = Square(5, 5)
+        self.assertEqual(s.area(), 25)
+
 if __name__ == '__main__':
     unittest.main()

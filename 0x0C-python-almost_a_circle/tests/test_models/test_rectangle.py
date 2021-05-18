@@ -69,5 +69,9 @@ class RectTest(unittest.TestCase):
         r.update(89, 2, 3, 4, 5)
         self.assertEqual(str(r), "[Rectangle] (89) 4/5 - 2/3")
 
+    def test_area(self):
+        r = Rectangle(5, 4)
+        self.assertEqual(r.area(), 20)
+
 if __name__ == '__main__':
     unittest.main()
