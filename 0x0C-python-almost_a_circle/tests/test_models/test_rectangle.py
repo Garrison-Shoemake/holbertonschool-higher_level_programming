@@ -43,7 +43,7 @@ class RectTest(unittest.TestCase):
             b2 = Rectangle(2, 0)
 
     def test_update(self):
-        rect = Rectangle(1, 1, 0, 0, 1)
+        r = Rectangle(1, 1, 0, 0, 1)
         self.assertEqual(str(r), "[Rectangle] (1) 0/0 - 1/1")
         r.update(89)
         self.assertEqual(str(r), "[Rectangle] (89) 0/0 - 1/1")
