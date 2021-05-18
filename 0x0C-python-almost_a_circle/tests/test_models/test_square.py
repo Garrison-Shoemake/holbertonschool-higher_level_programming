@@ -13,7 +13,7 @@ class SqrTest(unittest.TestCase):
         s = Square(1)
         self.assertEqual(s.width, 1)
         s = Square(1, 2)
-        self.assertEqual(s.height, 1)
+        self.assertEqual(s.x, 2)
 
     def test_basics(self):
         s = Square(3, 3, 5)
