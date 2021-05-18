@@ -9,6 +9,13 @@ from models.square import Square
 class SqrTest(unittest.TestCase):
     """ These are the unit tests for the base class """
 
+    def test_basics(self):
+        s = Square(3, 3, 5)
+        self.assertEqual(s.width, 3)
+        self.assertEqual(s.height, 3)
+        self.assertEqual(s.x, 3)
+        self.assertEqual(s.y, 5)
+
     def test_negatives(self):
         """ this method tests for negative numbers in Rectangle """
 
