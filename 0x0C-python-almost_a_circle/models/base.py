@@ -43,6 +43,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        dummy = Square(2)
+        dummy = Square()
         dummy.update(**dictionary)
         return dummy
