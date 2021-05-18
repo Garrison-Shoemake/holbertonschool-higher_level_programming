@@ -33,3 +33,10 @@ class Base:
                 newlist.append(cls.to_dictionary(i))
         with open(filename, 'w') as f:
             f.write(cls.to_json_string(newlist))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == []:
+            return []
+        else:
+            return json.dumps(json_string)
