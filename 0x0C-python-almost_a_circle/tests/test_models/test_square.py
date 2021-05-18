@@ -9,6 +9,12 @@ from models.square import Square
 class SqrTest(unittest.TestCase):
     """ These are the unit tests for the base class """
 
+    def test_basics2(self):
+        s = Square(1)
+        self.assertEqual(s.width, 1)
+        s = Square(1, 2)
+        self.assertEqual(s.height, 1)
+
     def test_basics(self):
         s = Square(3, 3, 5)
         self.assertEqual(s.width, 3)
