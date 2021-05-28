@@ -3,9 +3,9 @@
 -- sort results in ascending order by cities.id
 -- no JOIN
 SELECT id, name
-FROM hbtn_0d_usa.cities
-WHERE state_id.cities =
+FROM cities
+WHERE cities =
  (SELECT id
-  FROM hbtn_0d_usa.states
+  FROM states
   WHERE name = california),
-ORDER BY cities.id ASC;
+ORDER BY id ASC;
