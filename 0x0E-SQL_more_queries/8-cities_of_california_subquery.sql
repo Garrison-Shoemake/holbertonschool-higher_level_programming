@@ -5,4 +5,4 @@
 SELECT *
 FROM hbtn_0d_usa.states
 WHERE state_id.cities = 1,
-ORDER BY cities.id ASC
+ORDER BY cities.id ASC;
