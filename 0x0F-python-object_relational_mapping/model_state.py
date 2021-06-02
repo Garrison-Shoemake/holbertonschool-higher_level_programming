@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ this is a state class that inherits from SQLAlchemy """
 
 from sqlalchemy import Column, Integer, String
@@ -9,7 +8,6 @@ Base = declarative_base()
 
 
 class State(Base):
-
     """ model class from SQLAlchemy """
 
     __tablename__ = states
