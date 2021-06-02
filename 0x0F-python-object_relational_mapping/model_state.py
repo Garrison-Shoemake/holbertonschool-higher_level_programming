@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this is a state class that inherits from SQLAlchemy """
+"""this is a state class that inherits from SQLAlchemy"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
