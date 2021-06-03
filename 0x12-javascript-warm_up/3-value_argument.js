@@ -1,9 +1,14 @@
 #!/usr/bin/node
 const a = 'No argument';
+const args = process.argv;
+let i = 0;
 
-if (process.argv.length === 2) {
+while (args[i] !== undefined) {
+  i++;
+}
+if (i === 2) {
   console.log(a);
 }
-if (process.argv.length > 2) {
-  console.log(process.argv[2]);
+if (i > 2) {
+  console.log(args[2]);
 }
