@@ -1,0 +1,1 @@
+# this is the README for the 0x12.Javascript - Warming up Project
