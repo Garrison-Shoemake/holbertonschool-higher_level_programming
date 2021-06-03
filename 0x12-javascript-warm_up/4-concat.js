@@ -5,4 +5,4 @@ let i = 0;
 while (argv[i] !== undefined) {
   i++;
 }
-console.log(argv[2], 'is', argv[3]);
+console.log(argv[2] + " is " + argv[3]);
