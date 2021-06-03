@@ -6,7 +6,7 @@ const newarg = parseInt(args[2], 10);
 if (isNaN(newarg) === true) {
   console.log('Missing size');
 } else {
-  while (i <= newarg) {
+  while (i < newarg) {
     console.log('X'.repeat(newarg));
     i++;
   }
