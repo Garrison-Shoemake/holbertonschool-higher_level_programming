@@ -1,0 +1,1 @@
+# this is the readme for the 0x13.JS project: Object, Scopes, and Closures
